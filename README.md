@@ -1,1 +1,1 @@
-# srcset-example
+# start_template
