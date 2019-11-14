@@ -1,0 +1,7 @@
+.idea
+.vscode/settings.json
+.sass-cache
+./watch_scss.sh
+node_modules
+build
+.DS_Store
