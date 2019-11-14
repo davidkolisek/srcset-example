@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-    <title></title>
+    <title>Srcset example</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
 </head>
-<style>
-    html,body {
-        margin: 0;
-        padding: 0;
-    }
-    img {
-        width: 100%;
-    }
-</style>
 <body>
-<picture>
-    <!--desktop-->
-    <source srcset="img/desktop/w-2560.jpg 1x, img/desktop/w-3840.jpg 2x" media="screen and (min-width: 1920px)">
-    <source srcset="img/desktop/w-1920.jpg 1x, img/desktop/w-3840.jpg 2x" media="screen and (min-width: 1199px)">
-    <!--other devices-->
-    <source srcset="img/1/w-991.jpg 1x, img/2/w-1982.jpg 2x" media="screen and (min-width: 991px)">
-    <source srcset="img/1/w-767.jpg 1x, img/2/w-1534.jpg 2x" media="screen and (min-width: 767px)">
-    <source srcset="img/1/w-576.jpg 1x, img/2/w-1152.jpg 2x" media="screen and (min-width: 576px)">
-    <source srcset="img/1/w-576.jpg 1x, img/2/w-1152.jpg 2x" media="screen and (max-width: 575px)">
-    <source srcset="img/desktop/w-1920.jpg 1x, img/desktop/w-3840.jpg 2x">
-    <img src="img/desktop/w-1920.jpg" alt="Alt">
-</picture>
+<main>
+    <picture>
+        <!--desktop-->
+        <source srcset="img/desktop/w-3840.jpg 1x, img/desktop/w-3840.jpg 2x" media="screen and (min-width: 2560px)">
+        <source srcset="img/desktop/w-2560.jpg 1x, img/desktop/w-3840.jpg 2x" media="screen and (min-width: 1920px)">
+        <source srcset="img/desktop/w-1920.jpg 1x, img/desktop/w-3840.jpg 2x" media="screen and (min-width: 1199px)">
+        <!--other devices-->
+        <source srcset="img/1/w-1199.jpg 1x, img/2/w-2398.jpg 2x" media="screen and (min-width: 991px)">
+        <source srcset="img/1/w-991.jpg 1x, img/2/w-1982.jpg 2x" media="screen and (min-width: 767px)">
+        <source srcset="img/1/w-767.jpg 1x, img/2/w-1534.jpg 2x" media="screen and (min-width: 576px)">
+        <source srcset="img/1/w-576.jpg 1x, img/2/w-1152.jpg 2x" media="screen and (max-width: 575px)">
+        <source srcset="img/desktop/w-1920.jpg 1x, img/desktop/w-3840.jpg 2x">
+        <!--default-->
+        <img src="img/desktop/w-1920.jpg" alt="Alt">
+    </picture>
+
+<!--    external links-->
+<!--    <picture>-->
+<!--        &lt;!&ndash;desktop&ndash;&gt;-->
+<!--        <source srcset="https://i.ibb.co/Q9kBTxD/w-3840.jpg 1x, https://i.ibb.co/Q9kBTxD/w-3840.jpg 2x" media="screen and (min-width: 2560px)">-->
+<!--        <source srcset="https://i.ibb.co/7R12Ydt/w-2560.jpg 1x, https://i.ibb.co/Q9kBTxD/w-3840.jpg 2x" media="screen and (min-width: 1920px)">-->
+<!--        <source srcset="https://i.ibb.co/6YsrDz0/w-1920.jpg 1x, https://i.ibb.co/Q9kBTxD/w-3840.jpg 2x" media="screen and (min-width: 1199px)">-->
+<!--        &lt;!&ndash;other devices&ndash;&gt;-->
+<!--        <source srcset="https://i.ibb.co/cg4bGRT/w-1199.jpg 1x, https://i.ibb.co/0MdrqWh/w-2398.jpg 2x" media="screen and (min-width: 991px)">-->
+<!--        <source srcset="https://i.ibb.co/SnkXpb3/w-991.jpg 1x, https://i.ibb.co/7bPj39j/w-1982.jpg 2x" media="screen and (min-width: 767px)">-->
+<!--        <source srcset="https://i.ibb.co/2tMh0ZV/w-767.jpg 1x, https://i.ibb.co/zJYdhP5/w-1534.jpg 2x" media="screen and (min-width: 576px)">-->
+<!--        <source srcset="https://i.ibb.co/1JKbNrM/w-576.jpg 1x, https://i.ibb.co/0ZXw93r/w-1152.jpg 2x" media="screen and (max-width: 575px)">-->
+<!--        <source srcset="https://i.ibb.co/6YsrDz0/w-1920.jpg 1x, https://i.ibb.co/Q9kBTxD/w-3840.jpg 2x">-->
+<!--        &lt;!&ndash;default&ndash;&gt;-->
+<!--        <img src="https://i.ibb.co/6YsrDz0/w-1920.jpg" alt="Alt">-->
+<!--    </picture>-->
+
+    <section class="pr-2">
+        <!--pixel ratio 2-->
+        <div>original width: 3840px <br> pixel ratio: 2</div>
+        <div>original width: 2398px <br> pixel ratio: 2</div>
+        <div>original width: 1982px <br> pixel ratio: 2</div>
+        <div>original width: 1534px <br> pixel ratio: 2</div>
+        <div>original width: 1152px <br> pixel ratio: 2</div>
+
+    </section>
+    <section class="pr-1">
+        <!--pixel ratio 1-->
+        <div>original width: 1920px <br> pixel ratio: 1</div>
+        <div>original width: 1199px <br> pixel ratio: 1</div>
+        <div>original width: 991px <br> pixel ratio: 1</div>
+        <div>original width: 767px <br> pixel ratio: 1</div>
+        <div>original width: 576px <br> pixel ratio: 1</div>
+    </section>
+</main>
 </body>
 </html>
